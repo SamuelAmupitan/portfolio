@@ -1,0 +1,259 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    width: 100%;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #FFFFFF;
+    color: #333333;
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'DM Serif Display', serif;
+}
+
+.mobile-header {
+    display: none;
+}
+
+.navigation-menu {
+    display: none;
+}
+
+nav {
+    width: 100%;
+    padding: 20px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    background: #fff;
+    border-bottom: 2px solid black;
+}
+
+main {
+    z-index: 0;
+    padding-top: 72px;
+}
+
+nav h3 {
+    width: 60%;
+    font-size: 24px;
+}
+
+nav ul {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+    list-style-type: none;
+}
+li {
+    font-size: 20px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+#hero {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 5px inset black;
+    border-style: outset;
+}
+
+#hero div {
+    width: 80%;
+    padding-top: 150px;
+    display: flex;
+    background-color: #FFFFFF;
+    color: #333333;
+}
+
+#hero div div {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#hero div h1 {
+    font-size: 36px;
+}
+
+
+
+#time {
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 24px;
+    margin: 50px auto;
+}
+
+#time h1 {
+    font-family: 'DM Serif Display', serif;
+
+}
+
+#my-goals {
+    /* max-width: 1200px; */
+    width: 100%;
+    margin: 50px auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.goal {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 40px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.1);
+}
+
+.goal i {
+    font-size: 24px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.goal h2 {
+    margin-top: 0;
+}
+
+.goal p {
+    margin-bottom: 10px;
+}
+
+.goal ul {
+    list-style-position: inside;
+    margin-left: 20px;
+}
+
+#footer {
+    background-color: #f8f9fa;
+    width: 100%;
+    padding: 20px auto;
+}
+
+.hng-links {
+    display: flex;
+    justify-content: space-around;
+    gap: 8px;
+    list-style-type: none;
+}
+
+.hng-links li a {
+    text-decoration: underline;
+}
+
+
+
+@media (max-width: 768px) {
+    html {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .web-header {
+        display: none;
+    }
+
+    .mobile-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 10px;
+        position: fixed;
+        top: 0;
+        z-index: 999;
+        background: #fff;
+        width: 100%;
+    }
+
+    .navigation-menu {
+        position: fixed;
+        top: 45px;
+        display: flex; 
+        flex-direction: column;
+        list-style-type: none;
+        gap: 8px;
+        padding: 10px;
+        width: 100%;
+        height: 200px;
+        background-color: #fff;
+        z-index: 999;
+    } 
+
+    .menu-icon, .close-icon {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        font-size: 24px;
+        color: #333;
+    }
+
+    main {
+        z-index: 0;
+        padding-top: 0;
+    }
+
+    #hero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border: none;
+        border-bottom: 1px solid black;
+    }
+
+    #hero div {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 20px;
+    }
+
+    #time {
+        padding: 20px 60px;
+        height: 300px;
+        border-bottom: 1px solid black;
+    }
+
+    #my-goals {
+        margin-bottom: 0;
+    }
+
+    #footer {
+        padding: 20px;
+    }
+
+    .hng-links li {
+        font-size: 14px;
+    }
+}

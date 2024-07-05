@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>---My Tech Goals---</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=DM+Serif+Display&display=swap"
+        rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <nav class="web-header">
+            <h3>Samuel's Webpage</h3>
+            <ul>
+                <li>
+                    <a href="#time">Time</a>
+                </li>
+                <li>
+                    <a href="#my-goals">My Goals</a>
+                </li>
+                <li>
+                    <a href="#footer">Help</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="mobile-header">
+        <h2>Samuel's Webpage</h2>
+
+        <div class="menu-icon" onclick="toggleMenu()">
+            <img width="30" height="30" class="open-icon" src="https://img.icons8.com/ios/50/menu--v7.png"
+                alt="menu--v7" />
+            <img width="24" height="24" class="close-icon" src="https://img.icons8.com/fluency-systems-filled/96/x.png"
+                alt="x" />
+        </div>
+    </div>
+
+    <ul class="navigation-menu">
+        <li><a href="#time">Time</a></li>
+        <li><a href="#my-goals">My Goals</a></li>
+        <li><a href="#footer">Help</a></li>
+    </ul>
+
+    <main>
+        <section id="hero">
+            <img src="slack-profile-pic1.png" alt="My slack picture" data-testid="slackProfilePicture">
+            <div>
+                <div>
+                    <p>My Slack Display Name</p>
+                    <h1 data-testid="slackDisplayName">Samuel Amupitan</h1>
+                </div>
+                <div>
+                    <p>My Slack Email</p>
+                    <a href="mailto:amupitansamuel729@gmail.com"
+                        data-testid="slackEmail">amupitansamuel729@gmail.com</a>
+                </div>
+            </div>
+        </section>
+        <section id="time">
+            <h1>Wanna know what time you checked the greatness i created?</h1>
+            <h2 data-testid="currentTimeUTC"></h2>
+            <h2 data-testid="currentDay"></h2>
+        </section>
+
+        <div id="my-goals">
+            <h1>My Tech Goals for the Next 2 Years</h1>
+
+            <div class="goal">
+                <i class="fas fa-code"></i>
+                <h2>Master Frontend Development</h2>
+                <p>Enhance proficiency in frontend technologies to build dynamic and interactive web applications.</p>
+                <ul>
+                    <li>Complete advanced courses in HTML, CSS, and JavaScript.</li>
+                    <li>Participate in coding challenges on platforms like LeetCode and HackerRank.</li>
+                    <li>Contribute to open-source frontend projects on GitHub.</li>
+                </ul>
+            </div>
+
+            <div class="goal">
+                <i class="fab fa-android"></i>
+                <h2>Learn Mobile Development</h2>
+                <p>Acquire skills in mobile app development using popular frameworks and languages.</p>
+                <ul>
+                    <li>Enroll in mobile development courses focusing on Swift for iOS and Kotlin for Android.</li>
+                    <li>Develop a portfolio project showcasing a mobile application.</li>
+                    <li>Join mobile development communities for mentorship and collaboration.</li>
+                </ul>
+            </div>
+
+            <div class="goal">
+                <i class="fas fa-brain"></i>
+                <h2>Dive into AI and Machine Learning</h2>
+                <p>Gain foundational knowledge in artificial intelligence and machine learning to automate
+                    decision-making
+                    processes and analyze large datasets.</p>
+                <ul>
+                    <li>Pursue professional certificates in AI and ML from reputable institutions.</li>
+                    <li>Engage with AI and ML communities through forums and social media.</li>
+                    <li>Apply learned concepts in real-world projects to solve complex problems.</li>
+                </ul>
+            </div>
+
+            <div class="goal">
+                <i class="fas fa-briefcase"></i>
+                <h2>Secure a Job in Fintech or Similar Sectors</h2>
+                <p>Land a position in a fintech company or an organization that values and utilizes the skills acquired.
+                </p>
+                <ul>
+                    <li>Tailor resumes and cover letters to highlight relevant skills and experiences.</li>
+                    <li>Network with professionals in the fintech sector through LinkedIn and industry events.</li>
+                    <li>Prepare for interviews by practicing common interview questions and understanding the company's
+                        products
+                        and culture.</li>
+                </ul>
+            </div>
+
+            <div class="goal">
+                <i class="fas fa-users"></i>
+                <h2>Empower Youths Through Tech Education</h2>
+                <p>Inspire and educate young individuals interested in technology, fostering a new generation of tech
+                    enthusiasts and professionals.</p>
+                <ul>
+                    <li>Develop educational content on tech basics and share it through social media and local
+                        workshops.</li>
+                    <li>Mentor aspiring tech students, providing guidance and support throughout their learning journey.
+                    </li>
+                    <li>Collaborate with schools and community centers to introduce tech education programs.</li>
+                </ul>
+            </div>
+        </div>
+    </main>
+    <footer id="footer">
+        <ul class="hng-links">
+            <li>Visit the HNG website <a href="https://hng.tech/learn" target="_blank" rel="noopener noreferrer"
+                    data-testid="hngLink">here</a>
+            </li>
+            <li>Visit keyword.dog <a href="https://keyword.dog" target="_blank" rel="noopener noreferrer"
+                    data-testid="keywordLink">here</a>
+            </li>
+            <li>Visit scrapeanyweb <a href="https://scrapeanyweb.site" target="_blank" rel="noopener noreferrer"
+                    data-testid="scrapeanywebLink">here</a>
+            </li>
+        </ul>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
